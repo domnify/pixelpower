@@ -1,1 +1,815 @@
 
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to my Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  sticky-top sticky shadow-sm " id="scrollspy">
+        <div class="container">
+            <a class="navbar-brand " href="index.html">
+                <img src="assets/images/logo/logo.png" alt="portfolio" width="210px" height="35px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body p-4 pt-0 p-lg-0">
+                    <hr class="d-lg-none text-white-50">
+                    <ul class="navbar-nav nav-underline justify-content-end flex-grow-1 pe-3 flex-col flex-wrap ">
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2 " href="#home">
+                                Home</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2 " href="#about"> About</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto ">
+                            <a class="nav-link py-2 px-0 px-lg-2 " href="#services"> Services</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2 " href="#portfolio"> Portfolio</a>
+                        </li>
+
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2 " href="#blog">Blog</a>
+                        </li>
+
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2 " href="#contact"> Contact</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto ">
+                            <a class="nav-link py-2 px-0 px-lg-2 " href="#book-now"> Book a Call</a>
+                        </li>
+
+
+                    </ul>
+
+                    <hr class="d-lg-none text-white-50">
+
+                    <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="#" target="_blank" rel="noopener">
+                                <i class="bi bi-facebook"></i>
+                                <small class="d-lg-none ms-2">Facebook</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="#" target="_blank" rel="noopener">
+                                <i class="bi bi-instagram"></i>
+                                <small class="d-lg-none ms-2">Instgram</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="#" target="_blank" rel="noopener">
+                                <i class="bi bi-linkedin"></i>
+                                <small class="d-lg-none ms-2">Linkedin</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="#" target="_blank" rel="noopener">
+                                <i class="bi bi-twitter"></i>
+                                <small class="d-lg-none ms-2">Twitter</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="#" target="_blank" rel="noopener">
+                                <i class="bi bi-github"></i>
+                                <small class="d-lg-none ms-2">Github</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="#" target="_blank" rel="noopener">
+                                <i class="bi bi-youtube"></i>
+                                <small class="d-lg-none ms-2">Youtube</small>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class=" " data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" tabindex="0">
+
+        <section class="py-5 bg-body-tertiary" id="home">
+            <div class="container bg-light py-5 shadow ">
+                <div class="row flex">
+                    <div class=" col-lg-6 text-center text-lg-start ps-lg-5 py-3 d-block">
+                        <h2 class="py-1">Hi There ! <br> I am <span class="text-danger">Azhar Ahmad</span> </h2>
+
+                        <h3>A <span class="typed"></span> </h3>
+                        <p class="p-2 my-2 border-3 border-start border-dark">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Doloremque libero iste blanditiis
+                            molestiae ad neque dolor, dolorum quo, dicta, dolores quia in delectus quod temporibus.</p>
+
+                        <h2 class="mt-3">Follow Me On</h2>
+                        <ul class="nav   justify-content-center justify-content-lg-start">
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">
+                                    <i class="bi bi-facebook" style="font-size: 2rem; color: gray;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="bi bi-instagram" style="font-size: 2rem; color: gray;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="bi bi-twitter" style="font-size: 2rem; color: gray;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="bi bi-linkedin" style="font-size: 2rem; color: gray;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="bi bi-github" style="font-size: 2rem; color: gray;"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class=" col-lg-6 text-sm-center  order-lg-last order-first">
+                        <img class="mx-auto d-block border border-5 border-dark rounded-circle w-75 "
+                            src="assets/images/azhar-ahmad.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="py-4">
+            <div class="container">
+
+                <div class="section-title">
+                    <div class="row text-center ">
+                        <h2 class="fs-1 my-4">About<span class="text-danger">Me</span></h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                        <img src="assets/images/About.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center aos-init aos-animate"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                        <p class="fst-italic">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore
+                            magna aliqua.
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="bx bx-store-alt"></i>
+                                <div>
+                                    <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                                    <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bx bx-images"></i>
+                                <div>
+                                    <h5>Magnam soluta odio exercitationem reprehenderi</h5>
+                                    <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna
+                                        pasata redi</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in
+                            voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="py-5 bg-body-secondary" id="tech-stack">
+
+            <div class="container ">
+                <div class="row text-center ">
+                    <h2 class="fs-1 mb-5">My Tech<span class="text-danger">Stack</span></h2>
+                </div>
+                <div class="row row-cols-sm-4 row-cols-lg-8 p-4  g-4  bg-light rounded shadow-lg ">
+
+                    <div class="col">
+                        <div class=" text-center">
+                            <img class="" src="assets/images/tech-stack/html5-logo.png" width="auto" height="100px"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class=" text-center">
+                            <img class="" src="assets/images/tech-stack/css3-logo.png" width="auto" height="100px"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class=" text-center">
+                            <img class="" src="assets/images/tech-stack/bootstrap-logo.png" width="auto" height="100px"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class=" text-center">
+                            <img class="" src="assets/images/tech-stack/wordpress-logo.png" width="auto" height="100px"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class=" text-center">
+                            <img class="" src="assets/images/tech-stack/elementor-logo.png" width="auto" height="100px"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class=" text-center">
+                            <img class="" src="assets/images/tech-stack/woocommerce-logo.png" width="auto"
+                                height="100px" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class=" text-center">
+                            <img class="" src="assets/images/tech-stack/shopify-logo.png" width="auto " height="100px"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class=" text-center">
+                            <img class="" src="assets/images/tech-stack/figma-logo.png" width="auto " height="100px"
+                                alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-body-tertiary" id="services">
+            <div class="container">
+                <div class="row text-center">
+                    <h2 class="fs-1 mb-5">My <span class="text-danger">Services</span></h2>
+                </div>
+                <div class="row  row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card text-center px-3 py-5 shadow bg-light">
+                            <img class="card-image-top w-50 d-block mx-auto" src="assets/images/service icons/demo.png"
+                                alt="">
+
+                            <div class="card-body">
+                                <h4>Service Title</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex quod accusamus
+                                    eaque quasi perspiciatis, unde facere error? Eum, tempore?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center px-3 py-5 shadow bg-light">
+                            <img class="card-image-top w-50 d-block mx-auto" src="assets/images/service icons/demo.png"
+                                alt="">
+
+                            <div class="card-body">
+                                <h4>Service Title</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex quod accusamus
+                                    eaque quasi perspiciatis, unde facere error? Eum, tempore?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center px-3 py-5 shadow bg-light">
+                            <img class="card-image-top w-50 d-block mx-auto" src="assets/images/service icons/demo.png"
+                                alt="">
+
+                            <div class="card-body">
+                                <h4>Service Title</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex quod accusamus
+                                    eaque quasi perspiciatis, unde facere error? Eum, tempore?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center px-3 py-5 shadow bg-light">
+                            <img class="card-image-top w-50 d-block mx-auto" src="assets/images/service icons/demo.png"
+                                alt="">
+
+                            <div class="card-body">
+                                <h4>Service Title</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex quod accusamus
+                                    eaque quasi perspiciatis, unde facere error? Eum, tempore?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center px-3 py-5 shadow bg-light">
+                            <img class="card-image-top w-50 d-block mx-auto" src="assets/images/service icons/demo.png"
+                                alt="">
+
+                            <div class="card-body">
+                                <h4>Service Title</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex quod accusamus
+                                    eaque quasi perspiciatis, unde facere error? Eum, tempore?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center px-3 py-5 shadow bg-light">
+                            <img class="card-image-top w-50 d-block mx-auto" src="assets/images/service icons/demo.png"
+                                alt="">
+
+                            <div class="card-body">
+                                <h4>Service Title</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex quod accusamus
+                                    eaque quasi perspiciatis, unde facere error? Eum, tempore?</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+        <section class="my-5" id="portfolio">
+            <div class="container bg-light border rounded-3">
+                <div class="row pt-5 text-center">
+                    <h2> My Creative <span class="text-danger"> Portfolio </span> </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem numquam odit tempore, nam maiores
+                        amet.</p>
+                </div>
+                <div class="row p-5">
+                    <div class="col-12 col-lg-6 screen">
+                        <img src="assets/images/portfolio/shopify-clone.webp" alt="">
+                    </div>
+                    <div class=" col-12 col-lg-6 p-3">
+                        <h2>Shopify Clone</h2>
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illo!</h5>
+                        <p style="text-align: justify;" class="">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Debitis sapiente laborum architecto. Debitis tenetur, minus exercitationem illo
+                            deleniti vero quasi.</p>
+                    </div>
+                    <!--  -->
+
+                </div>
+                <hr>
+                <div class="row p-5">
+
+                    <div class="col-12 col-lg-6 p-3">
+                        <h2>Rode Website</h2>
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illo!</h5>
+                        <p style="text-align: justify;" class="">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Debitis sapiente laborum architecto. Debitis tenetur, minus exercitationem illo
+                            deleniti vero quasi.</p>
+                    </div>
+                    <div class="col-12 col-lg-6 order-sm-first order-lg-last screen">
+                        <img class="" src="assets/images/portfolio/rode-clone.webp" alt="">
+                    </div>
+                </div>
+                <hr>
+                <div class="row p-5 ">
+                    <div class="col-12 col-lg-6  screen">
+                        <img class="" src="assets/images/portfolio/paytm-clone.webp" alt="">
+                    </div>
+                    <div class="col-12 col-lg-6 p-3 ">
+                        <h2>Paytm Clone</h2>
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, illo!</h5>
+                        <p style="text-align: justify;" class="">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Debitis sapiente laborum architecto. Debitis tenetur, minus exercitationem illo
+                            deleniti vero quasi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="blog">
+            <div class="container">
+                <div class="row pt-2 text-center">
+                    <h2> My Creative <span class="text-danger"> Blog </span> </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem numquam odit tempore, nam maiores
+                        amet.</p>
+                </div>
+
+                <div class="row row-cols  row-cols-md-2 row-cols-lg-3 g-4 py-3 mb-5">
+
+                    <div class="col">
+
+                        <article>
+                            <div class="card">
+
+                                <img class="card-image-top" src="assets/images/blog/1.png" alt="">
+                                <p class="btn btn-sm btn-primary position-absolute" style=" top: 10px ; left: 10px;">
+                                    Post Label</p>
+                                <div class="card-body">
+                             
+                                    <h4 class="card-title">
+                                        <a class="link-dark text-decoration-none" href="#">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Molestiae, assumenda!</a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti libero tempore
+                                        laudantium. Impedit, maxime totam?</p>
+                                    
+                                    <div class="d-flex align-items-center ">
+                                        <img class="me-3" src="assets/images/azhar-ahmad.png" width="50px "
+                                            height="50px" alt="">
+                                        <div class="post-meta">
+                                            <p class="author-name m-0 pt-1">Azhar Ahmad</p>
+                                            <p class="post-date "> <time datetime="2022-01-01">Jan 1, 2022</time>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+
+                        <article>
+                            <div class="card">
+
+                                <img class="card-image-top" src="assets/images/blog/2.png" alt="">
+                                <p class="btn btn-sm btn-primary position-absolute " style="  top: 10px ; left: 
+                                10px;">
+                                    Post Label</p>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a class="link-dark text-decoration-none" href="#">Lorem ipsum, dolor sit amet
+                                            consectetur adipisicing elit. Ullam, molestias.</a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti libero tempore
+                                        laudantium. Impedit, maxime totam?</p>
+                                    <div class="d-flex align-items-center ">
+                                        <img class="me-3" src="assets/images/azhar-ahmad.png" width="50px "
+                                            height="50px" alt="">
+                                        <div class="post-meta">
+                                            <p class="author-name m-0 pt-1">Azhar Ahmad</p>
+                                            <p class="post-date "> <time datetime="2022-01-01">Jan 1, 2022</time>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+
+                        <article>
+                            <div class="card">
+
+                                <img class="card-image-top" src="assets/images/blog/3.png" alt="">
+                                <p class="btn btn-sm btn-primary position-absolute " style="top: 10px ; left: 10px;">
+                                    Post Label</p>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a class="link-dark text-decoration-none" href="#">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Iste, voluptatibus!</a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti libero tempore
+                                        laudantium. Impedit, maxime totam?</p>
+                                    <div class="d-flex align-items-center ">
+                                        <img class="me-3" src="assets/images/azhar-ahmad.png" width="50px "
+                                            height="50px" alt="">
+                                        <div class="post-meta">
+                                            <p class="author-name m-0 pt-1">Azhar Ahmad</p>
+                                            <p class="post-date "> <time datetime="2022-01-01">Jan 1, 2022</time>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+
+                        <article>
+                            <div class="card">
+
+                                <img class="card-image-top" src="assets/images/blog/4.png " alt="">
+                                <p class="btn btn-sm btn-primary position-absolute " style="top: 10px ; left: 10px;">
+                                    Post Label</p>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a class="link-dark text-decoration-none" href="#">Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit. Dolorem, quod?
+                                        </a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti libero tempore
+                                        laudantium. Impedit, maxime totam?</p>
+                                    <div class="d-flex align-items-center ">
+                                        <img class="me-3" src="assets/images/azhar-ahmad.png" width="50px "
+                                            height="50px" alt="">
+                                        <div class="post-meta">
+                                            <p class="author-name m-0 pt-1">Azhar Ahmad</p>
+                                            <p class="post-date "> <time datetime="2022-01-01">Jan 1, 2022</time>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+
+                        <article>
+                            <div class="card">
+
+                                <img class="card-image-top" src="assets/images/blog/5.png" alt="">
+                                <p class="btn btn-sm btn-primary position-absolute " style="top: 10px ; left: 10px;">
+                                    Post Label</p>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a class="link-dark text-decoration-none" href="#">Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Quisquam, cum! </a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti libero tempore
+                                        laudantium. Impedit, maxime totam?</p>
+                                    <div class="d-flex align-items-center ">
+                                        <img class="me-3" src="assets/images/azhar-ahmad.png" width="50px "
+                                            height="50px" alt="">
+                                        <div class="post-meta">
+                                            <p class="author-name m-0 pt-1">Azhar Ahmad</p>
+                                            <p class="post-date "> <time datetime="2022-01-01">Jan 1, 2022</time>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+
+                        <article>
+                            <div class="card">
+
+                                <img class="card-image-top" src="assets/images/blog/6.png" alt="">
+                                <p class="btn btn-sm btn-primary position-absolute " style="top: 10px ; left: 10px;">
+                                    Post Label</p>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a class="link-dark text-decoration-none" href="#">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Accusamus, nulla.</a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti libero tempore
+                                        laudantium. Impedit, maxime totam?</p>
+                                    <div class="d-flex align-items-center ">
+                                        <img class="me-3" src="assets/images/azhar-ahmad.png" width="50px "
+                                            height="50px" alt="">
+                                        <div class="post-meta">
+                                            <p class="author-name m-0 pt-1">Azhar Ahmad</p>
+                                            <p class="post-date "> <time datetime="2022-01-01">Jan 1, 2022</time>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+
+
+
+                </div><!-- End blog posts list -->
+
+
+
+            </div>
+        </section>
+        <section class="bg-body-secondary" id="contact">
+            <div class="container">
+                <div class="row pt-5 text-center">
+                    <h2> Contact <span class="text-danger"> Now </span> </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem numquam odit tempore, nam maiores
+                        amet.</p>
+                </div>
+                <div class="row ">
+                    <div class="col-12 col-md-8 col-lg-6 mx-auto mb-5 mt-3  p-4 shadow rounded bg-light">
+
+                        <form action="https://formspree.io/f/mzbwzdzr" method="POST">
+
+                            <label for="name" class="form-label my-3">Your Name </label>
+                            <input type="text" class="form-control" name="name" required id="name"
+                                placeholder="Enter Your Name">
+
+                            <label for="mail" class="form-label my-3">Your Email</label>
+                            <input type="email" class="form-control" name="email" required id="mail"
+                                placeholder="name@example.com">
+
+                            <label for="message" class="form-label my-3">Your Message</label>
+                            <textarea class="form-control" name="message" required id="message" rows="3"></textarea>
+
+                            <label class="form-check-label my-3" for="consent">
+                                <input class="form-check-input " name="consent" type="checkbox" value="" required
+                                    id="consent">
+                                By Submitting this form you agree to my <a class="link-dark text-decoration-none"
+                                    href="#">Terms</a>
+                                and <a class="link-dark text-decoration-none" href="#">Privacy</a>
+                            </label>
+                            <br>
+                            <button type="submit" class="btn btn-secondary">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-body" id="book-now">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12 col-md-9 text-center text-dark mx-auto py-5 bg-body-tertiary shadow">
+                        <h2>Ready to take your Business <span class="text-danger"> online Book a Call Now</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias facilis eius incidunt
+                            magni, est qui?</p>
+                        <a class="btn btn-primary mt-5" href="#">
+                            Book a Call
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <footer>
+        <div id="footer-top" class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 mb-3">
+                        <a href="/" aria-label="Domnify Services">
+                            <img class="mx-lg-0 mx-auto d-block mb-3" src="assets/images/logo/logo.png" alt="portfolio"
+                                width="240px" height="40px">
+                        </a>
+                        <ul class="list-unstyled small text-muted">
+                            <li class="mb-2">Welcome to Domnify, your number one platform for Marketing and Developement
+                                Solutions. Be Always Creative Keep Browsing</li>
+                        </ul>
+                        <ul class=" navbar-nav nav flex flex-row justify-content-center justify-content-lg-start">
+                            <li class="nav-item ">
+                                <a class="nav-link p-2 ps-0 " href="#" target="_blank">
+                                    <i class="bi bi-facebook" style="font-size: 28px;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2" href="#" target="_blank">
+                                    <i class="bi bi-instagram" style="font-size: 28px;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2" href="#" target="_blank">
+                                    <i class="bi bi-twitter" style="font-size: 28px;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 " href="#" target="_blank">
+                                    <i class="bi bi-pinterest" style="font-size: 28px;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2" href="#" target="_blank">
+                                    <i class="bi bi-linkedin" style="font-size: 28px;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2" href="#" target="_blank">
+                                    <i class="bi bi-github" style="font-size: 28px;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                        <h3 class="mb-3">Services</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Website Designing</a>
+                            </li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Website Customization</a>
+                            </li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Speed Optimization</a>
+                            </li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Content Creation </a>
+                            </li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Content Writing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 mb-3">
+                        <h3 class="mb-3">Guides</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a class="link-dark text-decoration-none"
+                                    href="https://services.domnify.com">Blogger</a></li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none"
+                                    href="https://services.domnify.com">WordPress</a></li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">HTML / CSS</a></li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Wix</a></li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Shopify</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 mb-3">
+                        <h3 class="mb-3">Projects</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Tailwind</a></li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Bootstrap</a></li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">HTML / CSS</a></li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Themes</a></li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Graphics</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 mb-3">
+                        <h3 class="mb-3">Community</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Home</a></li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Resources</a></li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none" href="#">Tools</a></li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none"
+                                    href="https://services.domnify.com">Portfolio</a></li>
+                            <li class="mb-2"><a class="link-dark text-decoration-none"
+                                    href="https://services.domnify.com">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-copyright" class=" bg-dark">
+            <div class="container">
+                <div class="row ">
+                    <div class="copyright col-lg-6 text-white pt-2 order-lg-1 order-2">
+                        <p class="text-center text-lg-start"> Copyright &copy; <a
+                                class="link-light text-decoration-none" href="/">My Portfolio</a> | Design By <a
+                                class="link-light text-decoration-none" href="https://github.com/ImAzharAhmad">Azhar
+                                Ahmad</a> </p>
+                    </div>
+                    <div class="footer-menu col-lg-6 order-lg-2 order-1  ">
+                        <ul class="nav justify-content-center justify-content-lg-end">
+                            <li class="nav-item">
+                                <a class="nav-link px-2 link-light" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 link-light" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 link-light" href="#">Terms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 link-light" href="#">Privacy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 link-light" href="#">Feedack</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 link-light" href="#">Disclaimer</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var typed = new Typed('.typed', {
+
+            strings: ['Web Designer', 'Web Developer', 'SEO Expert', 'Social Media Expert', 'Content Creator'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+        });
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.js"></script>
+
+
+</body>
+
+</html>

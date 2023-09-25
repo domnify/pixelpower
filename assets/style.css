@@ -1,19 +1,11 @@
 
-#banner-page {
-    background-image: url(https://ivault.tech/assets/images/banner.png);
-    background-size: auto;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-}
-
-
-
-
 a {
     text-decoration: none;
     cursor: pointer;
+
+}
+a.active{
+    color:blue;
 }
 
 h1 {
@@ -29,11 +21,6 @@ body {
     font-family: Helvetica;
     background-color: #f0f0f0;
     font-size: 18px;
-}
-
-.breadcrumb-item::before {
-    color: #f0f0f0 !important;
-
 }
 
 

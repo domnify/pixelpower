@@ -48,7 +48,7 @@ navbar = document.getElementById('navbar');
 window.addEventListener('scroll', function () {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
-        navbar.style.top = '-100px';
+        navbar.style.top = '-200px';
     }
     else {
         navbar.style.top = '0';
@@ -62,8 +62,8 @@ window.addEventListener('scroll', function () {
 new PureCounter({
 
     selector: ".customer",
-    start: 500,
-    end: 800,
+    start: 300,
+    end: 500,
     duration: 2,
     delay: 10,
 });
@@ -71,27 +71,27 @@ new PureCounter({
 
 new PureCounter({
 
-    selector: ".cctv",
-    start: 250,
-    end: 400,
+    selector: ".device",
+    start: 800,
+    end: 1200,
     duration: 2,
     delay: 10,
 });
 
 new PureCounter({
 
-    selector: ".biometric",
-    start: 400,
-    end: 600,
+    selector: ".exp",
+    start: 8,
+    end: 12,
     duration: 2,
     delay: 10,
 });
 
 new PureCounter({
 
-    selector: ".premises",
-    start: 30,
-    end: 50,
+    selector: ".location",
+    start: 10,
+    end: 15,
     duration: 2,
     delay: 10,
 });
